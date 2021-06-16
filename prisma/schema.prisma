@@ -12,7 +12,7 @@ generator client {
 
 
 model User {
-  id String @id @db.Text @default(dbgenerated("gen_uid()"))
+  id String @id @db.Text @default(dbgenerated("gen_uid(17)"))
   username String @db.VarChar(100)
   email String @db.VarChar(100)
 }
